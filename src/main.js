@@ -10,6 +10,7 @@ import 'styles/iconfont.css'
 Vue.config.productionTip = false
 fastclick.attach(document.body)
 /* eslint-disable no-new */
+'11111111'
 new Vue({
   el: '#app',
   router,
