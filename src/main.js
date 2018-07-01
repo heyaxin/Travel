@@ -9,7 +9,6 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 Vue.config.productionTip = false
 fastclick.attach(document.body)
-'hello'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
