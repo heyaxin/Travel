@@ -38,5 +38,9 @@
 		width:100%
 	}
 }
-
+</style>
+<style lang="scss">
+	.wiper .swiper-pagination-bullet-active{
+	background: white !important;
+}
 </style>
