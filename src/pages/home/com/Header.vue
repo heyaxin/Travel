@@ -8,24 +8,29 @@
 			<span class="iconfont">&#xe6e4;</span>
 			输入城市/景点/游玩主题
 		</div>
-		<div class="header-right">
-			城市
-			<span class="iconfont arrow-icon">&#xe64a;</span>
-		</div>
+		<router-link to="/city">
+			<div class="header-right">
+				{{this.$store.state.city}}
+				<span class="iconfont arrow-icon">&#xe64a;</span>
+			</div>
+		</router-link>
 	</div>
 </div>
 </template>
 
 <script>
 	export default{
-		name:'HomeHeader'
+		name:'HomeHeader',
+		props: {
+			city: String
+		}
 	}
 </script>
 
 <style lang='scss' scoped="scoped">
 @import '~styles/varible.scss';
 .header{
-	line-height: 0.86rem;
+	line-height: $headerHeight;
 	display:flex;
 	background:$bgColor;
 	color:#fff;
@@ -53,6 +58,7 @@
 		width: 1.24rem;
 		float:right;
 		text-align: center;
+		color:#fff;
 		.arrow-icon{
 			font-size:.24rem;
 			margin-left: -0.04rem;
